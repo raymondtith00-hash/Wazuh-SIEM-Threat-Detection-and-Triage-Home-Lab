@@ -115,7 +115,11 @@ Monitoring account management events helps security analysts identify unauthoriz
 
 **User Creation Alert**
 
-![User Creation](Screenshots/User%20and%20group%20creation.png)
+![User Creation](Screenshots/User%20and%20group%20creation.png) 
+
+**Kali Perspective** 
+
+![User-Perspective](Screenshots/User-Perspective.png)
 
 ---
 
