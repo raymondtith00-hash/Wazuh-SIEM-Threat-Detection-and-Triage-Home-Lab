@@ -1,4 +1,4 @@
-# Wazuh Home SOC Lab
+# Wazuh SIEM Threat Detection Lab
 
 ## Overview
 The goal of this lab is to simulate real-world cyber attacks, monitor endpoint and network activity, investigate security events, and perform vulnerability assessments.
