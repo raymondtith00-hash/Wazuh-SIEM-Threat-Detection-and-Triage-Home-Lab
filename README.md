@@ -187,7 +187,7 @@ Monitoring account management events helps security analysts identify unauthoriz
 
 ![User-Perspective](Screenshots/User-Perspective.png)
 
-**Account Creatioin Triage Workflo** 
+**Account Creation Triage Workflow** 
 
 - Identify the account that was created or removed.
 - Determine which administrator performed the action.
