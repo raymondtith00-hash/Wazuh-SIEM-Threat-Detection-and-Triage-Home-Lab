@@ -1,8 +1,7 @@
 # Wazuh Home SOC Lab
 
 ## Overview
-This project documents the development of a home Security Operations Center (SOC) using Wazuh, Suricata, Kali Linux, and Ubuntu Servers.
-The goal of this lab is to simulate real-world cyber attacks, monitor endpoint and network activity, investigate security events, and perform vulnerability assessments 
+The goal of this lab is to simulate real-world cyber attacks, monitor endpoint and network activity, investigate security events, and perform vulnerability assessments.
 
 ## Lab Architecture
 
@@ -47,7 +46,7 @@ The goal of this lab is to simulate real-world cyber attacks, monitor endpoint a
 
 ### SSH Authentication Failure and Success
 
-I used Hydra from my Kali Linux VM to target my Ubuntu agent. Wazuh detected the repeated failed login attempts and generated authentication alerts, allowing me to investigate the activity through the dashboard.
+I used Hydra from my Kali Linux VM to perform an SSH brute-force attack against my Ubuntu agent. Wazuh detected the repeated failed login attempts and generated authentication alerts that I investigated through the Wazuh Dashboard.
 
 ![Hydra Result](Screenshots/Hydra%20result.png) 
 ![Authentication Failure](Screenshots/Authenticatioin%20failure.png)
@@ -62,7 +61,7 @@ To test File Integrity Monitoring, I created, modified, and deleted files on the
 
 ### Network Reconnaissance
 
-I performed an Nmap scan from my Kali Linux VM against the Ubuntu agent to simulate reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, where I was able to review the event.
+I performed an Nmap scan from my Kali Linux VM against the Ubuntu agent to simulate reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, where I investigated the alert the Wazuh Dashboard.
 
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
 
@@ -70,7 +69,7 @@ I performed an Nmap scan from my Kali Linux VM against the Ubuntu agent to simul
 
 ### Privilege Escalation
 
-I simulated privilege escalation by using `sudo` to elevate my privileges on the Ubuntu agent. Wazuh detected the successful elevation to the root account and generated a security event 
+I simulated privilege escalation by using `sudo` to elevate my privileges on the Ubuntu agent. Wazuh detected the successful elevation to the root account and generated a security event that was analyzed through the dashboard. 
 
 ![Privilege Escalation](Screenshots/Privelge%20Escalation%20to%20Root.png)
 
@@ -78,13 +77,13 @@ I simulated privilege escalation by using `sudo` to elevate my privileges on the
 
 ### User Account Creation
 
-To alert account management activity, I created and removed a local Linux user on the Ubuntu agent. Wazuh detected both actions and logged the events, demonstrating its ability to monitor changes to user accounts.
+To create account management activity, I created and removed a local Linux user on the Ubuntu agent. Wazuh detected both actions and logged the events, demonstrating its ability to monitor changes to user accounts.
 
 ![User Creation and Removal](Screenshots/User%20creation%20and%20removal.png)
 
 # What I Learned
 
-Building this lab gave me a much better understanding of how a SOC operates and how security analysts investigate alerts. Before building it, I had learned about SIEMs and threat detection through coursework and labs, but this project gave me the opportunity to put those concepts into practice.
+Overall, this project made me more confident using Linux, investigating security alerts, and understanding how a Security Operations Center monitors and responds to security events. Building this lab gave me a much better understanding of how a SOC operates and how security analysts investigate alerts. Before building it, I had learned about SIEMs and threat detection through coursework and labs, but this project gave me the opportunity to put those concepts into practice.
 
 Throughout the lab, I configured Wazuh, integrated Suricata, simulated attacks from my Kali Linux VM, and investigated the resulting alerts through the Wazuh Dashboard.
 
