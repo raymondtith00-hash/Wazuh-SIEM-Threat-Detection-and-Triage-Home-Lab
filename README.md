@@ -56,6 +56,8 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 
 ![Authentication Success](Screenshots/Authentication-success.png)
 
+---
+
 ### File Integrity Monitoring
 
 To test File Integrity Monitoring (FIM), I created, modified, and deleted files on the Ubuntu endpoint. Wazuh detected each file system change and generated alerts detailing the affected files and directories, demonstrating its ability to identify unauthorized modifications to monitored resources.
@@ -93,6 +95,8 @@ To simulate account management activity, I created and removed a local Linux use
 Monitoring account management events helps security analysts identify unauthorized account creation or deletion that may indicate persistence, privilege escalation, or other post-compromise activity.
 
 ![User Creation and Removal](Screenshots/User%20creation%20and%20removal.png)
+
+---
 
 # What I Learned
 
