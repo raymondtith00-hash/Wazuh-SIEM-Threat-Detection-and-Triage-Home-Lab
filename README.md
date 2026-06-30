@@ -58,7 +58,7 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 
 **Wazuh Authentication Alerts**
 
-![Hydra](Screenshots/Hydra result.png)
+![Hydra](Screenshots/Hydra-result.png)
 
 ![Hydra](Screenshots/Hydra-ssh.png)
 
