@@ -1,7 +1,8 @@
 # Wazuh SIEM Threat Detection Lab
 
 ## Overview
-The goal of this lab is to simulate real-world cyber attacks, monitor endpoint and network activity, investigate security events, and perform vulnerability assessments.
+
+The purpose of this project was to build a SOC monitoring and investigation lab capable of detecting, monitoring, and analyzing common attacker techniques. Using Wazuh SIEM, Suricata IDS, Ubuntu Server, and Kali Linux, I simulated real-world attack scenarios and investigated the resulting security events from a defender's perspective.
 
 ## Lab Architecture
 
