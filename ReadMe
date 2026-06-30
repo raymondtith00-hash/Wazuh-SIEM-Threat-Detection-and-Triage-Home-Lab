@@ -1,10 +1,8 @@
 # Wazuh Home SOC Lab
 
 ## Overview
-
-This project documents my home Security Operations Center (SOC) lab built using Wazuh, Kali Linux, and Ubuntu Server. 
-
-The objective is to simulate common attacker techniques, generate security events, and investigate alerts within the Wazuh dashboard.
+This project documents the development of a home Security Operations Center (SOC) using Wazuh, Suricata, Kali Linux, Ubuntu Server, and Nessus Essentials.
+The goal of this lab is to simulate real-world cyber attacks, monitor endpoint and network activity, investigate security events, and perform vulnerability assessments 
 
 ## Lab Architecture
 
@@ -14,19 +12,22 @@ The objective is to simulate common attacker techniques, generate security event
 
 ## Technologies
 
-- Wazuh
+- Technologies
+- Wazuh SIEM
+- Suricata IDS
+- Nessus Essentials
 - Ubuntu Server
 - Kali Linux
 - Linux
 - SSH
+- Hydra
 - Nmap
 
 ## Current Scenarios
 
-- [x] SSH Authentication
-- [x] Privilege Escalation
-- [x] File Integrity Monitoring
-- [x] User Account Creation
-- [x] Package Installation
-- [x] Threat Hunting
-- [x] Vulnerability Management (Nessus Essentials)
+- SSH Authentication
+- Privilege Escalation
+- File Integrity Monitoring
+- User Account Creation
+- Threat Hunting
+- Vulnerability Management (Nessus Essentials)
