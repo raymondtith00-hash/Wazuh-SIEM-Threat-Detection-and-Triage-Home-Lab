@@ -53,6 +53,7 @@ I used Hydra from my Kali Linux VM to perform an SSH brute-force attack against 
 In a separate scenario, I successfully authenticated to the Ubuntu endpoint over SSH to simulate an attacker obtaining valid credentials. Wazuh generated a successful authentication event that included the source IP address, username, and login details. This information is valuable during a security event investigation because it allows analysts to identify where the connection originated, determine whether the login is expected or suspicious, and establish a timeline of attacker activity.
 
 **Hydra Simulation Kali Perspective
+
 ![Hydra Attack](Screenshots/Hydra-attack-kali-perspective.png)
 
 **Wazuh Authentication Alerts**
