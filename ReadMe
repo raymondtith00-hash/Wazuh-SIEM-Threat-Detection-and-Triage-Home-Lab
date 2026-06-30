@@ -52,6 +52,7 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 ### File Integrity Monitoring
 
 To test File Integrity Monitoring (FIM), I created, modified, and deleted files on the Ubuntu endpoint. Wazuh detected each file system change and generated alerts detailing the affected files and directories, demonstrating its ability to identify unauthorized modifications to monitored resources.
+
 This capability is critical because attackers who gain access to a system often attempt to modify, delete, or introduce malicious files to establish persistence, execute malware, tamper with logs, or compromise sensitive data. File Integrity Monitoring helps security analysts quickly detect these unauthorized changes and investigate potential security incidents.
 
 ![FIM](Screenshots/FIM.png)
@@ -60,8 +61,7 @@ This capability is critical because attackers who gain access to a system often 
 
 ### Network Reconnaissance
 
-I performed an Nmap scan from my Kali Linux VM against the Ubuntu agent to simulate reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, where I investigated the alert the Wazuh Dashboard.
-
+I performed an Nmap scan from my Kali Linux VM against the Ubuntu endpoint to simulate network reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, where I investigated the event through the Wazuh Dashboard. The alert provided details such as the source IP address, destination host, and signature identifying the reconnaissance activity, allowing me to validate the detection and assess potential pre-attack behavior. Detecting reconnaissance is critical because attackers often use port scanning to identify open services and potential attack vectors before attempting to exploit a target.
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
 
 ---
