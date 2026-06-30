@@ -58,7 +58,7 @@ Hydra Simulation Kali Perspective
 
 **Wazuh Authentication Alerts**
 
-![Authentication Failure](Screenshots/Authentication-failure.png)
+![Hydra](Screenshots/Hydra-ssh.png)
 
 **Successful SSH Login Detected**
 
