@@ -52,7 +52,7 @@ I used Hydra from my Kali Linux VM to perform an SSH brute-force attack against 
 
 In a separate scenario, I successfully authenticated to the Ubuntu endpoint over SSH to simulate an attacker obtaining valid credentials. Wazuh generated a successful authentication event that included the source IP address, username, and login details. This information is valuable during a security event investigation because it allows analysts to identify where the connection originated, determine whether the login is expected or suspicious, and establish a timeline of attacker activity.
 
-Hydra Simulation Kali Perspective
+**Hydra Simulation Kali Perspective**
 
 ![Hydra Attack](Screenshots/Hydra-attack-kali-perspective.png)
 
@@ -99,7 +99,7 @@ I simulated privilege escalation by using sudo to elevate my privileges on the U
 
 Finding privilege escalation is essential because attackers attempt to gain administrative access after compromising a system, enabling them to execute unauthorized commands, modify system configurations, establish persistence, and access sensitive data.
 
-**Privilege Escalation Alert
+**Privilege Escalation Alert**
 
 ![Privilege-Escalation](Screenshots/Privlege-Escalation-to-Root.png)
 
@@ -111,7 +111,7 @@ To simulate account management activity, I created and removed a local Linux use
 
 Monitoring account management events helps security analysts identify unauthorized account creation or deletion that may indicate persistence, privilege escalation, or other post-compromise activity.
 
-**User Creation Alert
+**User Creation Alert**
 
 ![User Creation](Screenshots/User%20and%20group%20creation.png)
 
