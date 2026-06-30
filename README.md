@@ -101,7 +101,7 @@ Finding privilege escalation is essential because attackers attempt to gain admi
 
 **Privilege Escalation Alert**
 
-![Privilege Escalation](Screenshots/Privlege-Escalation-to-Root.png)
+![Privilege-Escalation](Screenshots/Privlege-Escalation-to-Root.png)
 
 ---
 
