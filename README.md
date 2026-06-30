@@ -66,7 +66,7 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 
 ![Authentication Success](Screenshots/Authentication-success.png)
 
-**Triage Workflow** 
+**Hydra Brute Force Triage Workflow**                                                                              
 - Review the alert severity and rule triggered.
 - Identify the source IP address and targeted username.
 - Count the number of failed authentication attempts.
@@ -76,6 +76,17 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 - Determine whether the activity originated from an authorized system.
 - Escalate if successful authentication occurred after repeated failures.
 - Recommend blocking the source IP and resetting compromised credentials if necessary.
+
+**Successful Authenticationi Log in Triage Workflow** 
+- Verify the username that authenticated.
+- Identify the source IP address.
+- Determine whether the login occurred during expected hours.
+- Review authentication history for previous failed attempts.
+- Check for privilege escalation following login.
+- Review commands executed after authentication.
+- Determine whether the source host is trusted.
+- Escalate if the login appears suspicious or follows brute-force activity.
+  
 ---
 
 ### File Integrity Monitoring
@@ -90,6 +101,18 @@ This capability is critical because attackers who gain access to a system often 
 **FIM Kali Perspective**
 
 ![FIM](Screenshots/FIM-kali-perspective.png)
+
+**File Integrity Monitoring Triage Workflow**
+
+- Identify the affected file or directory.
+- Determine whether the change was expected.
+- Identify which user performed the modification.
+- Review surrounding authentication logs.
+- Determine whether multiple files were modified.
+- Check for execution of newly created files.
+- Look for evidence of persistence or malware.
+- Escalate if sensitive system files were altered.
+
 ---
 
 ### Network Reconnaissance
@@ -102,6 +125,16 @@ Detecting reconnaissance is important because attackers often use port scanning 
 
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
 
+**Network Reconnaissance Triage Workflow 
+- Review the IDS signature.
+- Identify the source IP address.
+- Determine the destination host.
+- Review which ports were scanned.
+- Check for additional alerts from the same IP.
+- Determine whether exploitation attempts followed the scan.
+- Correlate with firewall logs.
+- Recommend blocking the source if unauthorized.
+
 ---
 
 ### Privilege Escalation
@@ -113,6 +146,17 @@ Finding privilege escalation is essential because attackers attempt to gain admi
 **Privilege Escalation Alert**
 
 ![Privilege Escalation](Screenshots/Privilege-escalation.png)
+
+**Privilege Escalation Workflow Triage** 
+
+- Identify the user account.
+- Review the executed command.
+- Determine whether elevation was authorized.
+- Check authentication logs leading up to the event.
+- Review subsequent privileged commands.
+- Look for new users, services, or scheduled tasks.
+- Review changes to critical system files.
+- Escalate if privilege escalation was unexpected.
 
 ---
 
@@ -129,6 +173,17 @@ Monitoring account management events helps security analysts identify unauthoriz
 **Kali Perspective** 
 
 ![User-Perspective](Screenshots/User-Perspective.png)
+
+**Account Creatioin Triage Workflo** 
+
+- Identify the account that was created or removed.
+- Determine which administrator performed the action.
+- Verify whether the change was authorized.
+- Review recent authentication activity.
+- Check whether the account was added to privileged groups.
+- Review login activity for the new account.
+- Look for related persistence techniques.
+- Escalate if the account was unauthorized.
 
 ---
 
