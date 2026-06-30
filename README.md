@@ -66,6 +66,16 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 
 ![Authentication Success](Screenshots/Authentication-success.png)
 
+**Triage Workflow** 
+- Review the alert severity and rule triggered.
+- Identify the source IP address and targeted username.
+- Count the number of failed authentication attempts.
+- Determine whether multiple usernames were targeted.
+- Review successful login events following the failures.
+- Correlate the source IP with firewall or network logs.
+- Determine whether the activity originated from an authorized system.
+- Escalate if successful authentication occurred after repeated failures.
+- Recommend blocking the source IP and resetting compromised credentials if necessary.
 ---
 
 ### File Integrity Monitoring
