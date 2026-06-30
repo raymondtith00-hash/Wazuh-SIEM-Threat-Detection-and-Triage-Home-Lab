@@ -105,7 +105,7 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 
 ### File Integrity Monitoring
 
-To test File Integrity Monitoring (FIM), I created, modified, and deleted files on the Ubuntu endpoint. Wazuh detected each file system change and generated alerts detailing the affected files and directories, demonstrating its ability to identify unauthorized modifications to monitored resources.
+To test File Integrity Monitoring (FIM), I created, modified, and deleted files on the Ubuntu endpoint. Wazuh detected each file system change and generated alerts detailing the affected files and directories, demonstrating its ability to identify unauthorized modifications to monitored resources. Depending if the victim practices bad security standards very valuable information that is stored recklessly can be removed, stolen, and modified.
 
 This capability is critical because attackers who gain access to a system often attempt to modify, delete, or introduce malicious files to establish persistence, execute malware, tamper with logs, and even compromise sensitive data. File Integrity Monitoring helps security analysts quickly detect these unauthorized changes and investigate potential security incidents. 
 
