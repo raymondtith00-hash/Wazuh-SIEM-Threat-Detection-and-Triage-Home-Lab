@@ -146,9 +146,14 @@ I performed an Nmap scan from my Kali Linux VM against the Ubuntu endpoint to si
 
 Detecting reconnaissance is important because attackers often use port scanning as a first step to identify open services and potential attack vectors before attempting to exploit a target.
 
+<details>
+<summary>Suricata Nmap Alert</summary> 
+
 **Suricata Nmap Alert**
 
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
+
+</details> 
 
 <details> 
 <summary><strong>Network Reconnaissance Triage Workflow</strong></summary> 
@@ -202,7 +207,7 @@ To simulate account management activity, I created a local Linux user from the K
 Monitoring account management events helps security analysts identify unauthorized account creation or deletion that may indicate persistence, privilege escalation, or other post-compromise activity.
 
 <details>
-<summary>View Account Creation Screenshots</summary>
+<summary>View Account Creation</summary>
 
 **User Creation Alert**
 
