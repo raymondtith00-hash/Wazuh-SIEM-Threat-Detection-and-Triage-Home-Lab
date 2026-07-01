@@ -15,12 +15,8 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 **SIEM & Security Monitoring**
 - Wazuh SIEM
 - Suricata IDS
-- Operating Systems
-- Ubuntu Server
-- Kali Linux
-- Linux
 
-**Offensive Security & Attack Simulation**
+- **Offensive Security & Attack Simulation**
 - Hydra (SSH Brute Force)
 - Nmap (Network Reconnaissance)
 - Privilege Escalation
