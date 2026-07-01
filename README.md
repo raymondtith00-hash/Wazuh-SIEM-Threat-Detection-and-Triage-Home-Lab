@@ -204,7 +204,7 @@ Monitoring account management events helps security analysts identify unauthoriz
 
 # What I Learned
 
-Building this lab allowed me to apply concepts I had previously learned through coursework in a realistic environment. Setting up multiple Vms to mimic an environment, configuring Wazuh, integrating Suricata, and simulating attacks from a Kali Linux VM gave me hands-on experience with security monitoring and event analysis.
+Building this lab allowed me to apply concepts I had previously learned through coursework in realistic scenarios. Setting up multiple Vms to mimic an environment, configuring Wazuh, integrating Suricata, and simulating attacks from a Kali Linux VM gave me hands-on experience with security monitoring and event analysis.
 
 Working through each scenario helped me understand how attacker activity is detected across endpoint and network telemetry, how to investigate alerts using log data, and how to triage security events by validating suspicious activity and correlating related evidence.
 
