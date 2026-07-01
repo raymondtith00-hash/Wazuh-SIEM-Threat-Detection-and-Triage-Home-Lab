@@ -66,6 +66,9 @@ I used Hydra from my Kali Linux VM to perform an SSH brute-force attack against 
 
 In a separate scenario, I successfully authenticated to the Ubuntu endpoint over SSH to simulate an attacker obtaining valid credentials. Wazuh generated a successful authentication event that included the source IP address, username, and login details. This information is valuable during a security event investigation because it allows analysts to identify where the connection originated, determine whether the login is expected or suspicious, and establish a timeline of attacker activity.
 
+<details> 
+<summary>Hydra Simulation and Authentication Success</summary> 
+
 **Hydra Simulation Kali Perspective**
 
 ![Hydra Attack](Screenshots/Hydra-attack-kali-perspective.png)
@@ -80,10 +83,12 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 
 ![Authentication Success](Screenshots/Authentication-success.png)
 
+</details> 
+
 <details> 
 <summary><strong>Hydra Brute Force Triage Workflow</strong></summary>                                                                          
 
-  - Review the alert severity and rule triggered.
+- Review the alert severity and rule triggered.
 - Identify the source IP address and targeted username.
 - Count the number of failed authentication attempts.
 - Determine whether multiple usernames were targeted.
@@ -117,6 +122,9 @@ To test File Integrity Monitoring (FIM), I created, modified, and deleted files 
 
 This capability is critical because attackers who gain access to a system often attempt to modify, delete, or introduce malicious files to establish persistence, execute malware, tamper with logs, and even compromise sensitive data. File Integrity Monitoring helps security analysts quickly detect these unauthorized changes and investigate potential security incidents. 
 
+<details> 
+<summary>File Integrity Monitoring</summary> 
+
 **FIM Events**
 
 ![FIM](Screenshots/FIM.png)
@@ -124,6 +132,8 @@ This capability is critical because attackers who gain access to a system often 
 **FIM Kali Perspective**
 
 ![FIM](Screenshots/FIM-kali-perspective.png)
+
+</details>
 
 <details>
 <summary><strong>File Integrity Monitoring Triage Workflow</strong></summary>
@@ -148,6 +158,7 @@ Detecting reconnaissance is important because attackers often use port scanning 
 
 <details>
 <summary>Suricata Nmap Alert</summary> 
+
 **Suricata Nmap Alert**
 
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
