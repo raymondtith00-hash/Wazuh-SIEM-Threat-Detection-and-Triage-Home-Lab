@@ -16,7 +16,7 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 - Wazuh SIEM
 - Suricata IDS
 
-- **Offensive Security & Attack Simulation**
+**Offensive Security & Attack Simulation**
 - Hydra (SSH Brute Force)
 - Nmap (Network Reconnaissance)
 - Privilege Escalation
