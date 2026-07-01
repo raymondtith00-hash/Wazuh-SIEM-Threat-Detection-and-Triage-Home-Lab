@@ -30,7 +30,7 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 
 --- 
 
-## Security Concepts Demonstrated**
+## Security Concepts Demonstrated
 - SSH Brute Force Detection
 - Authentication Monitoring
 - File Integrity Monitoring (FIM)
