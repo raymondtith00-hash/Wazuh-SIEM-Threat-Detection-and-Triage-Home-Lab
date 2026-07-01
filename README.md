@@ -6,9 +6,9 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 
 ## Lab Architecture
 
-- Ubuntu Server (Wazuh Manager + Dashboard)
+- Ubuntu VM (Wazuh Server)
 - Kali Linux (Attacker)
-- Ubuntu Server (Monitored Endpoint with Wazuh Agent)
+- Ubuntu VM (Monitored Endpoint with Wazuh Agent)
 
 ## Technologies Used
 
