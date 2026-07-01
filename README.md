@@ -27,10 +27,6 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 - User Creation
 - File Management Integrity
 
-**Protocols & Services**
-- SSH
-- Sudo
-
 --- 
 
 ## Security Concepts Demonstrated
