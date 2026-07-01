@@ -41,6 +41,7 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 - Threat Detection
 - Log Analysis
 
+---
 
 ## Skills Used 
 
@@ -57,6 +58,8 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 -Validated File Integrity Monitoring (FIM) by creating, modifying, and deleting monitored files while verifying Wazuh's detection of unauthorized file system changes.
 
 -Investigated Linux privilege escalation and user account creation events by reviewing Wazuh alerts and system logs to confirm security-relevant administrative activity.
+
+--- 
 
 ## Lab Demonstrations
 
@@ -148,6 +151,7 @@ This capability is critical because attackers who gain access to a system often 
 - Escalate if sensitive system files were altered.
 
 </details>
+
 ---
 
 ### Network Reconnaissance
@@ -178,6 +182,7 @@ Detecting reconnaissance is important because attackers often use port scanning 
 - Recommend blocking the source if unauthorized.
 
 </details>
+
 ---
 
 ### Privilege Escalation
@@ -208,6 +213,7 @@ Finding privilege escalation is essential because attackers attempt to gain admi
 - Escalate if privilege escalation was unexpected.
 
 </details> 
+
 ---
 
 ### User Account Creation
