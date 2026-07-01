@@ -95,10 +95,10 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 
 </details> 
 
-<details><
+<details>
 <summary><strong>Successful Authentication Log in Triage Workflow</strong></summary> 
 
-  - Verify the username that authenticated.
+- Verify the username that authenticated.
 - Identify the source IP address.
 - Determine whether the login occurred during expected hours.
 - Review authentication history for previous failed attempts.
@@ -125,7 +125,8 @@ This capability is critical because attackers who gain access to a system often 
 
 ![FIM](Screenshots/FIM-kali-perspective.png)
 
-**File Integrity Monitoring Triage Workflow**
+<details>
+<summary><strong>File Integrity Monitoring Triage Workflow</strong></summary>
 
 - Identify the affected file or directory.
 - Determine whether the change was expected.
@@ -136,6 +137,7 @@ This capability is critical because attackers who gain access to a system often 
 - Look for evidence of persistence or malware.
 - Escalate if sensitive system files were altered.
 
+</details>
 ---
 
 ### Network Reconnaissance
@@ -148,7 +150,9 @@ Detecting reconnaissance is important because attackers often use port scanning 
 
 ![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
 
-**Network Reconnaissance Triage Workflow**
+<details> 
+<summary><strong><Network Reconnaissance Triage Workflow</strong></summary> 
+
 - Review the IDS signature.
 - Identify the source IP address.
 - Determine the destination host.
@@ -158,6 +162,7 @@ Detecting reconnaissance is important because attackers often use port scanning 
 - Correlate with firewall logs.
 - Recommend blocking the source if unauthorized.
 
+</details>
 ---
 
 ### Privilege Escalation
@@ -170,7 +175,8 @@ Finding privilege escalation is essential because attackers attempt to gain admi
 
 ![Privilege Escalation](Screenshots/Privilege-escalation.png)
 
-**Privilege Escalation Workflow Triage** 
+<details> 
+<summary><strong>Privilege Escalation Workflow Triage</strong></summary> 
 
 - Identify the user account.
 - Review the executed command.
@@ -181,6 +187,7 @@ Finding privilege escalation is essential because attackers attempt to gain admi
 - Review changes to critical system files.
 - Escalate if privilege escalation was unexpected.
 
+</details> 
 ---
 
 ### User Account Creation
@@ -197,7 +204,8 @@ Monitoring account management events helps security analysts identify unauthoriz
 
 ![User-Perspective](Screenshots/User-Perspective.png)
 
-**Account Creation Triage Workflow** 
+<details>
+<summary><strong>Account Creation Triage Workflow</strong></summary>
 
 - Identify the account that was created or removed.
 - Determine which administrator performed the action.
@@ -208,6 +216,8 @@ Monitoring account management events helps security analysts identify unauthoriz
 - Look for related persistence techniques.
 - Escalate if the account was unauthorized.
 
+</details>
+  
 ---
 
 # What I Learned
