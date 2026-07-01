@@ -95,8 +95,10 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 
 </details> 
 
-**Successful Authentication Log in Triage Workflow** 
-- Verify the username that authenticated.
+<details><
+<summary><strong>Successful Authentication Log in Triage Workflow</strong></summary> 
+
+  - Verify the username that authenticated.
 - Identify the source IP address.
 - Determine whether the login occurred during expected hours.
 - Review authentication history for previous failed attempts.
@@ -104,6 +106,8 @@ In a separate scenario, I successfully authenticated to the Ubuntu endpoint over
 - Review commands executed after authentication.
 - Determine whether the source host is trusted.
 - Escalate if the login appears suspicious or follows brute-force activity.
+
+</details>
   
 ---
 
