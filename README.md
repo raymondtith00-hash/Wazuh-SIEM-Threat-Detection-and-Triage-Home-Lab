@@ -23,6 +23,10 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 **Offensive Security & Attack Simulation**
 - Hydra (SSH Brute Force)
 - Nmap (Network Reconnaissance)
+- Privilege Escalation
+- User Creation
+- Password Manipulation
+- File Management Integrity
 
 **Protocols & Services**
 - SSH
