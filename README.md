@@ -196,6 +196,9 @@ To simulate account management activity, I created a local Linux user from the K
 
 Monitoring account management events helps security analysts identify unauthorized account creation or deletion that may indicate persistence, privilege escalation, or other post-compromise activity.
 
+<details>
+<summary>View Account Creation Screenshots</summary>summary>
+
 **User Creation Alert**
 
 ![User Creation](Screenshots/User%20and%20group%20creation.png) 
@@ -203,6 +206,8 @@ Monitoring account management events helps security analysts identify unauthoriz
 **Kali Perspective** 
 
 ![User-Perspective](Screenshots/User-Perspective.png)
+
+</details> 
 
 <details>
 <summary><strong>Account Creation Triage Workflow</strong></summary>
