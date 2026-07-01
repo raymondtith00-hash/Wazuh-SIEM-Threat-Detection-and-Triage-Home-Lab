@@ -26,15 +26,15 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 --- 
 
 ## Security Concepts Demonstrated
-- SSH Brute Force Detection
-- Authentication Monitoring
+- Authentication Security Monitoring
 - File Integrity Monitoring (FIM)
-- Network Reconnaissance Detection
+- Network Traffic Analysis
 - Privilege Escalation Detection
-- User Account Monitoring
+- User Activity Monitoring
+- Threat Detection and Analysis
 - Security Event Investigation
-- Threat Detection
-- Log Analysis
+- Log Analysis and Correlation
+- Incident Triage
 
 ---
 
