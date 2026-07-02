@@ -253,5 +253,3 @@ Overall, the lab gave me practical experience with SIEM technologies, threat det
 Working through each scenario helped me understand how attacker activity is detected across endpoint and network telemetry, how to investigate alerts using log data, and how to triage security events by validating suspicious activity and correlating related evidence.
 
 This project also strengthened my Linux administration skills through user management, file system monitoring, service configuration, and troubleshooting.
-
-Overall, the lab gave me practical experience with SIEM technologies, threat detection, security event investigation, and reinforced the importance of understanding cybersecurity from both the attacker and defender perspectives.
