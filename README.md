@@ -26,6 +26,7 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 --- 
 
 ## Security Concepts Demonstrated
+
 - Authentication Security Monitoring
 - File Integrity Monitoring (FIM)
 - Network Traffic Analysis
@@ -56,6 +57,37 @@ The purpose of this project was to build a SOC monitoring and investigation lab 
 --- 
 
 ## Lab Demonstrations
+
+### Network Reconnaissance
+
+I performed an Nmap scan from my Kali Linux VM against the Ubuntu endpoint to simulate network reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, where I investigated the event through the Wazuh Dashboard. The alert provided details such as the source IP address, destination host, and signature identifying the reconnaissance activity, allowing me to validate the detection and assess potential pre-attack behavior.
+
+Detecting reconnaissance is important because attackers often use port scanning as a first step to identify open services and potential attack vectors before attempting to exploit a target.
+
+<details>
+<summary>Suricata Nmap Alert</summary> 
+
+**Suricata Nmap Alert**
+
+![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
+
+</details> 
+
+<details> 
+<summary><strong>Network Reconnaissance Triage Workflow</strong></summary> 
+
+- Review the IDS signature.
+- Identify the source IP address.
+- Determine the destination host.
+- Review which ports were scanned.
+- Check for additional alerts from the same IP.
+- Determine whether exploitation attempts followed the scan.
+- Correlate with firewall logs.
+- Recommend blocking the source if unauthorized.
+
+</details>
+
+---
 
 ### SSH Authentication Failure and Success
 
@@ -148,37 +180,6 @@ This capability is critical because attackers who gain access to a system often 
 
 ---
 
-### Network Reconnaissance
-
-I performed an Nmap scan from my Kali Linux VM against the Ubuntu endpoint to simulate network reconnaissance activity. Suricata detected the scan and forwarded the alert to Wazuh, where I investigated the event through the Wazuh Dashboard. The alert provided details such as the source IP address, destination host, and signature identifying the reconnaissance activity, allowing me to validate the detection and assess potential pre-attack behavior. 
-
-Detecting reconnaissance is important because attackers often use port scanning as a first step to identify open services and potential attack vectors before attempting to exploit a target.
-
-<details>
-<summary>Suricata Nmap Alert</summary> 
-
-**Suricata Nmap Alert**
-
-![Suricata Nmap](Screenshots/Suricata%20NMAP.png)
-
-</details> 
-
-<details> 
-<summary><strong>Network Reconnaissance Triage Workflow</strong></summary> 
-
-- Review the IDS signature.
-- Identify the source IP address.
-- Determine the destination host.
-- Review which ports were scanned.
-- Check for additional alerts from the same IP.
-- Determine whether exploitation attempts followed the scan.
-- Correlate with firewall logs.
-- Recommend blocking the source if unauthorized.
-
-</details>
-
----
-
 ### Privilege Escalation
 
 I simulated privilege escalation by using sudo to elevate my privileges on the Ubuntu endpoint. Wazuh detected the successful elevation to the root account and generated a security event, which I investigated through the Wazuh Dashboard. The alert captured details about the privileged command execution and user account involved, allowing me to verify the activity and understand how elevated privileges are monitored. 
@@ -247,7 +248,13 @@ Monitoring account management events helps security analysts identify unauthoriz
 
 # What I Learned
 
-Building this lab allowed me to apply concepts I had previously learned through coursework in realistic scenarios. Setting up multiple Vms to mimic an environment, configuring Wazuh, integrating Suricata, and simulating attacks from a Kali Linux VM gave me hands-on experience with security monitoring and event analysis.
+Building this lab allowed me to apply concepts I had previously learned through coursework in realistic scenarios. Setting up multiple VMs to mimic an environment, configuring Wazuh, integrating Suricata, and simulating attacks from a Kali Linux VM gave me hands-on experience with security monitoring and event analysis.
+
+Working through each scenario helped me understand how attacker activity is detected across endpoint and network telemetry, how to investigate alerts using log data, and how to triage security events by validating suspicious activity and correlating related evidence.
+
+This project also strengthened my Linux administration skills through user management, file system monitoring, service configuration, and troubleshooting.
+
+Overall, the lab gave me practical experience with SIEM technologies, threat detection, security event investigation, and reinforced the importance of understanding cybersecurity from both the attacker and defender perspectives.apply concepts I had previously learned through coursework in realistic scenarios. Setting up multiple Vms to mimic an environment, configuring Wazuh, integrating Suricata, and simulating attacks from a Kali Linux VM gave me hands-on experience with security monitoring and event analysis.
 
 Working through each scenario helped me understand how attacker activity is detected across endpoint and network telemetry, how to investigate alerts using log data, and how to triage security events by validating suspicious activity and correlating related evidence.
 
