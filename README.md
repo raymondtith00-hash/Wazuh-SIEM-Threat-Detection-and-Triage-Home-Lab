@@ -91,7 +91,7 @@ Detecting reconnaissance is important because attackers often use port scanning 
 
 ### SSH Authentication Failure and Success
 
-I used Hydra from my Kali Linux VM to perform an SSH brute-force attack against my Ubuntu endpoint. Wazuh detected the repeated failed login attempts and generated authentication alerts, which I investigated through the Wazuh Dashboard to analyze the attack activity.
+Used Hydra from a Kali Linux VM to simulate an SSH brute-force attack against an Ubuntu endpoint, demonstrating how repeated password-guessing attempts can expose weak credentials, enable unauthorized access, and create risk of system compromise. I investigated Wazuh authentication alerts through the dashboard to analyze failed login patterns, validate detection logic, and understand how SIEM monitoring helps identify malicious activity.
 
 In a separate scenario, I successfully authenticated to the Ubuntu endpoint over SSH to simulate an attacker obtaining valid credentials. Wazuh generated a successful authentication event that included the source IP address, username, and login details. This information is valuable during a security event investigation because it allows analysts to identify where the connection originated, determine whether the login is expected or suspicious, and establish a timeline of attacker activity.
 
