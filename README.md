@@ -2,7 +2,7 @@
 
 ## Overview
 
-The purpose of this project was to build a SOC monitoring and investigation lab capable of detecting, monitoring, and analyzing common attacker techniques. Using Wazuh SIEM, Suricata IDS, Ubuntu Server, and Kali Linux, I simulated real-world attack scenarios and investigated the resulting security events from a defender's perspective and ways to triage them.
+The purpose of this project was to build a SOC alert and investigation lab capable of detecting, monitoring, and analyzing common attacker techniques. Using Wazuh SIEM, Suricata IDS, Ubuntu Server, and Kali Linux, I simulated real-world attack scenarios and investigated the resulting security events from a defender's perspective and ways to triage them.
 
 ## Lab Architecture
 
